@@ -97,3 +97,10 @@ La IA se utilizó como apoyo para organizar el diseño, revisar decisiones de
 implementación y proponer pruebas. El equipo debe revisar, comprender, probar
 y adaptar todo el código antes de entregarlo; la responsabilidad final de la
 solución y de su uso es humana.
+
+## Entrega académica
+
+- [Diagrama de estructura](./diagramas/diagrama-estructura.svg)
+- [Diagrama de comportamiento](./diagramas/diagrama-comportamiento.svg)
+- [Diapositivas en PDF](./entrega/Diapositivas-Taller-Criptografia.pdf)
+- [Guion para el video](./GUION_VIDEO.md)

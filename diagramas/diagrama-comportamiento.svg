@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="850" viewBox="0 0 1400 850">
+  <style>
+    text { font-family: Arial, sans-serif; fill: #172033; }
+    .title { font-size: 30px; font-weight: bold; }
+    .label { font-size: 18px; font-weight: bold; }
+    .step { font-size: 17px; }
+    .life { stroke: #aab6c4; stroke-width: 2; stroke-dasharray: 8 8; }
+    .arrow { stroke: #315a8a; stroke-width: 3; fill: none; }
+  </style>
+  <text x="700" y="45" text-anchor="middle" class="title">Diagrama de comportamiento: flujo de protección</text>
+  <text x="120" y="100" text-anchor="middle" class="label">Usuario</text>
+  <text x="380" y="100" text-anchor="middle" class="label">CLI</text>
+  <text x="700" y="100" text-anchor="middle" class="label">Generador</text>
+  <text x="1000" y="100" text-anchor="middle" class="label">Cripto</text>
+  <text x="1280" y="100" text-anchor="middle" class="label">Disco</text>
+  <line x1="120" y1="120" x2="120" y2="790" class="life"/>
+  <line x1="380" y1="120" x2="380" y2="790" class="life"/>
+  <line x1="700" y1="120" x2="700" y2="790" class="life"/>
+  <line x1="1000" y1="120" x2="1000" y2="790" class="life"/>
+  <line x1="1280" y1="120" x2="1280" y2="790" class="life"/>
+  <line x1="120" y1="160" x2="380" y2="160" class="arrow"/><polygon points="380,160 360,151 360,169" fill="#315a8a"/><text x="130" y="150" class="step">1. Ingresa cantidad</text>
+  <line x1="380" y1="220" x2="700" y2="220" class="arrow"/><polygon points="700,220 680,211 680,229" fill="#315a8a"/><text x="390" y="210" class="step">2. Solicita eventos</text>
+  <line x1="700" y1="280" x2="380" y2="280" class="arrow"/><polygon points="380,280 400,271 400,289" fill="#315a8a"/><text x="420" y="270" class="step">3. Log + hash por payload</text>
+  <line x1="380" y1="350" x2="1000" y2="350" class="arrow"/><polygon points="1000,350 980,341 980,359" fill="#315a8a"/><text x="550" y="340" class="step">4. SHA-256 del log claro</text>
+  <line x1="1000" y1="420" x2="1280" y2="420" class="arrow"/><polygon points="1280,420 1260,411 1260,429" fill="#315a8a"/><text x="1040" y="410" class="step">5. AES-256-GCM</text>
+  <line x1="1280" y1="480" x2="380" y2="480" class="arrow"/><polygon points="380,480 400,471 400,489" fill="#315a8a"/><text x="650" y="470" class="step">6. Artefactos separados</text>
+  <line x1="380" y1="550" x2="1000" y2="550" class="arrow"/><polygon points="1000,550 980,541 980,559" fill="#315a8a"/><text x="550" y="540" class="step">7. Descifrar ciphertext</text>
+  <line x1="1000" y1="620" x2="380" y2="620" class="arrow"/><polygon points="380,620 400,611 400,629" fill="#315a8a"/><text x="590" y="610" class="step">8. Log reconstruido</text>
+  <line x1="380" y1="690" x2="120" y2="690" class="arrow"/><polygon points="120,690 140,681 140,699" fill="#315a8a"/><text x="145" y="680" class="step">9. Resultado: hash coincide</text>
+</svg>

@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760">
+  <style>
+    text { font-family: Arial, sans-serif; fill: #172033; }
+    .title { font-size: 30px; font-weight: bold; }
+    .head { font-size: 20px; font-weight: bold; fill: white; }
+    .field { font-size: 18px; }
+    .box { fill: #f7f9fc; stroke: #315a8a; stroke-width: 3; rx: 12; }
+    .header { fill: #315a8a; }
+    .line { stroke: #526579; stroke-width: 3; fill: none; }
+  </style>
+  <text x="600" y="48" text-anchor="middle" class="title">Diagrama de estructura: log académico protegido</text>
+  <rect x="60" y="100" width="1080" height="110" class="box"/>
+  <rect x="60" y="100" width="1080" height="44" class="header" rx="12"/>
+  <text x="600" y="130" text-anchor="middle" class="head">Log</text>
+  <text x="95" y="178" class="field">schema_version</text>
+  <text x="350" y="178" class="field">generated_at</text>
+  <text x="630" y="178" class="field">events: []Event</text>
+  <line x1="600" y1="210" x2="600" y2="265" class="line"/>
+  <polygon points="600,285 590,265 610,265" fill="#526579"/>
+  <rect x="130" y="285" width="940" height="250" class="box"/>
+  <rect x="130" y="285" width="940" height="44" class="header" rx="12"/>
+  <text x="600" y="315" text-anchor="middle" class="head">Event</text>
+  <text x="165" y="365" class="field">id</text>
+  <text x="165" y="402" class="field">timestamp</text>
+  <text x="165" y="439" class="field">type</text>
+  <text x="165" y="476" class="field">actor_uid</text>
+  <text x="450" y="365" class="field">student_uid</text>
+  <text x="450" y="402" class="field">course_uid</text>
+  <text x="450" y="439" class="field">operation: Operation</text>
+  <text x="450" y="476" class="field">payload_hash</text>
+  <line x1="600" y1="535" x2="600" y2="590" class="line"/>
+  <polygon points="600,610 590,590 610,590" fill="#526579"/>
+  <rect x="280" y="610" width="640" height="105" class="box"/>
+  <rect x="280" y="610" width="640" height="44" class="header" rx="12"/>
+  <text x="600" y="640" text-anchor="middle" class="head">Operation</text>
+  <text x="360" y="690" class="field">previous_grade (solo modificación)</text>
+  <text x="700" y="690" class="field">new_grade</text>
+</svg>
