@@ -102,5 +102,3 @@ solución y de su uso es humana.
 
 - [Diagrama de estructura](./diagramas/diagrama-estructura.svg)
 - [Diagrama de comportamiento](./diagramas/diagrama-comportamiento.svg)
-- [Diapositivas en PDF](./entrega/Diapositivas-Taller-Criptografia.pdf)
-- [Guion para el video](./GUION_VIDEO.md)
